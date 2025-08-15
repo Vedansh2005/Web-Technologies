@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Add Generator</title>
+</head>
+<body>
+<h2>Add Generator</h2>
+
+<form >
+ <div class="forms">
+    <label for="gid">Generator ID:</label>
+    <input type="number" id="gid" name="generator_id" >
+    <br><br>
+
+    <label for="gname">Generator Name:</label>
+    <input type="text" id="gname" name="generator_name">
+    <br><br>
+
+    <label for="gtype">Type:</label>
+    <select id="gtype" name="generator_type">
+        <option value="diesel">Diesel</option>
+        <option value="petrol">Petrol</option>
+        <option value="solar">Solar</option>
+        <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <label for="gpower">Power Capacity (kW):</label>
+    <input type="number" id="gpower" name="power_capacity" >
+    <br><br>
+
+    <label for="grent">Rental Price per Day:</label>
+    <input type="number" id="grent" name="rental_price">
+    <br><br>
+
+    <label for="gdate">Available From:</label>
+    <input type="date" id="gdate" name="available_from">
+    <br><br>
+
+    <label for="gfile">Upload Image:</label>
+    <input type="file" id="gfile" name="generator_image" >
+    <br><br>
+
+    <label for="gdesc">Description:</label>
+    <textarea id="gdesc" name="description" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <input type="submit" value="Add Generator">
+    <input type="reset" value="Reset">
+	</div>
+</form>
+
+</body>
+</html>
