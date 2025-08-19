@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title>Assignment2</title>
+
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #main-header {
+            background-color: gold;
+            border: 2px solid black;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+        .highlight {
+            color: darkblue;
+            text-decoration: underline;
+        }
+        h2, p {
+            color: darkgreen;
+            margin: 10px;
+        }
+        form label {
+            font-weight: bold;
+            color: maroon;
+        }
+        form {
+            margin: 15px auto;
+            padding: 10px;
+            border: 1px solid gray;
+            width: 60%;
+            background-color: #ffffff;
+            text-align: left;
+            position: relative;
+        }
+        input, select, textarea {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #666;
+            background-color: #f0f0f0;
+            color: #000;
+            font-size: 14px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #45a049;
+            cursor: pointer;
+        }
+        h1::first-letter {
+            font-size: 200%;
+            color: red;
+        }
+        .box {
+            border: 2px dashed blue;
+            padding: 10px;
+            margin: 15px;
+            background-image: url("frontendpic.png");
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-attachment: scroll;
+        }
+        #absoluteBox {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background: lightyellow;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        #fixedBox {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: pink;
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="text-align:center;">
+    <header id="main-header">
+        <h1 class="highlight" style="font-style:italic;">Smart role assignment for team management</h1>
+    </header>
+    <h2>Select your role</h2>
+    <form>
+        <br><input type="radio" id="admin" name="role" value="admin" style="accent-color:blue;">Admin
+        <br><input type="radio" id="developer" name="role" value="developer" style="accent-color:green;">Developer
+        <br><input type="radio" id="tester" name="role" value="tester" checked style="accent-color:red;">Tester
+    </form>
+    <form class="box">
+        <p>Available Projects:</p>
+        <input type="checkbox" id="A" name="teamproA" value="Team A">Project Alpha
+        <br><input type="checkbox" id="B" name="teamproB" value="Team B">Project Beta
+        <br><input type="checkbox" id="C" name="teamproC" value="Team C">Project Gamma
+    </form>
+    <form>
+        <label>Choose your role:</label>
+        <select>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Database">Database</option>
+        </select>
+    </form>
+    <form> 
+        <p>Enter the details:</p>
+        <textarea rows="5" cols="30">Role Details and skills</textarea> 
+    </form>
+    <form>
+        <label>Select your work experience</label>  
+        <input type="number" id="experience" name="experience" min="0" max="30" required > years<br><br>
+        <label>Select your age</label>
+        <input type="datetime-local" id="birthdate" name="birthdate"><br><br>
+        <label>Select your email</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label>Upload your resume</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.docx"><br><br>
+        <label>Skill level</label>
+        <input type="range" id="skill" name="skill" min="1" max="10"><br><br>
+        <label>Frontend pic</label>
+        <input type="image" src="frontendpic.png" width="100"><br><br>   
+        <label>Username</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label>Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Submit" style="background-color:green; color:white; padding:5px 10px;">
+        <input type="reset" value="Reset" style="background-color:red; color:white; padding:5px 10px;"><br><br>
+        <label>Sample</label>
+    </form>
+    <div id="absoluteBox">Absolute Box</div>
+    <div id="fixedBox">Fixed Box</div>
+</body>
+</html>

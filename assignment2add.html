@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Skill</title>
+</head>
+
+<body>
+  <h2 style="background-color:silver;text-align:center;color:black;">Add Skill</h2>
+
+  <form>
+
+    <label>Select Skill Type</label><br>
+    <input type="radio" id="Typef" name="Typef" value="Frontend">Frontend
+    <input type="radio" id="Typeb" name="Typeb" value="Backend">Backend<br><br>
+
+    <label>Enter Skill Name</label><br>
+    <input type="text" id="skillName" name="skillName"><br><br>
+
+    <label>Enter Trainer/Institute Name</label><br>
+    <input type="text" id="provider" name="provider"><br><br>
+
+    <label >Enter Skill Level (1-10)</label><br>
+    <input type="number" id="level" name="level" min="1" max="10"><br><br>
+
+    <label>Start Date</label><br>
+    <input type="date" id="startDate" name="startDate"><br><br>
+
+    <label>Last Used Date</label><br>
+    <input type="date" id="lastUsed" name="lastUsed"><br><br>
+
+    <label>Select Additional Abilities</label><br>
+    <input type="checkbox" id="teamwork" name="abilities" value="Teamwork">Teamwork<br>
+    <input type="checkbox" id="leadership" name="abilities" value="Leadership">Leadership<br>
+    <input type="checkbox" id="communication" name="abilities" value="Communication">Communication<br><br>
+
+    <input type="submit" value="Add Skill">
+    <input type="reset" value="Reset">
+
+  </form>
+</body>
+</html>
